@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S.S.D.F SARL - Bâtir la confiance, alimenter le progrès</title>
+  <style>
+    :root {
+      --orange: #ff6600;
+      --noir: #111;
+      --blanc: #fff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background-color: var(--noir);
+      color: var(--blanc);
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom right, #000, #111, #222);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(var(--orange) 2px, transparent 2px);
+      background-size: 50px 50px;
+      opacity: 0.05;
+      animation: move 20s linear infinite;
+    }
+    @keyframes move {
+      from {transform: translate(0, 0);}
+      to {transform: translate(-50px, -50px);}
+    }
+    h1 {
+      font-size: 3rem;
+      color: var(--orange);
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+    }
+    a.btn {
+      background: var(--orange);
+      color: var(--blanc);
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    a.btn:hover {
+      background: #ff8533;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    section h3 {
+      color: var(--orange);
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .produits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .produit {
+      background: #1b1b1b;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .produit:hover {
+      transform: scale(1.05);
+    }
+    .produit h4 {
+      color: var(--orange);
+      margin-bottom: 10px;
+    }
+    .produit p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+    .temoignages {
+      font-style: italic;
+      opacity: 0.85;
+      text-align: center;
+    }
+    footer {
+      background: #0d0d0d;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+    footer span {
+      color: var(--orange);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>S.S.D.F SARL</h1>
+    <h2>Bâtir la confiance, alimenter le progrès</h2>
+    <a href="#produits" class="btn">Découvrir la boutique</a>
+  </header>
+
+  <section id="about">
+    <h3>À propos</h3>
+    <p>
+      S.S.D.F SARL est une société engagée dans la croissance durable. 
+      Notre mission est simple : ne jamais faillir à nos engagements et garantir la satisfaction de nos clients. 
+      Chez S.S.D.F, nous mettons un point d’honneur à allier rigueur, ponctualité et innovation, 
+      afin de proposer des solutions fiables et durables. 
+      Nous offrons une large gamme de services que vous pouvez parcourir sur notre site.
+    </p>
+  </section>
+
+  <section id="produits">
+    <h3>Nos produits et services</h3>
+    <div class="produits">
+      <div class="produit">
+        <h4>Service Logistique</h4>
+        <p>Transport, gestion et livraison rapide avec fiabilité garantie.</p>
+        <a href="#contact" class="btn">Nous contacter</a>
+      </div>
+      <div class="produit">
+        <h4>Fourniture Énergie</h4>
+        <p>Solutions énergétiques durables et performantes.</p>
+        <a href="#contact" class="btn">Nous contacter</a>
+      </div>
+      <div class="produit">
+        <h4>Matériel Industriel</h4>
+        <p>Équipements de qualité pour vos besoins professionnels.</p>
+        <a href="#contact" class="btn">Nous contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="temoignages">
+    <h3>Ce que dit notre communauté</h3>
+    <p class="temoignages">“Fiabilité, innovation et respect des délais — S.S.D.F, c’est la confiance assurée !”</p>
+  </section>
+
+  <section id="contact">
+    <h3>Contactez-nous</h3>
+    <p>Email : <a href="mailto:ssdf.logistics@gmail.com">ssdf.logistics@gmail.com</a></p>
+    <p>Téléphone : +223 75 75 15 72</p>
+    <p><a href="https://wa.me/22375751572" class="btn">Nous écrire sur WhatsApp</a></p>
+  </section>
+
+  <footer>
+    © 2025 <span>S.S.D.F SARL</span> – Tous droits réservés.
+  </footer>
+
+</body>
+</html>
